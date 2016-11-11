@@ -3,141 +3,161 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
     <title>Bootstrap Tutorial</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <h1>Turing M2 Bootstrap Tutorial</h1>
     <h2>Goals</h2>
-    <p>By the end of this tutorial, you will know/be able to:</p>
-    <ul>
-      <li>Have a basic understanding of Bootstrap and its capabilities.</li>
-      <li>Learn how adding Bootstrap classes to an element can change its style.</li>
-      <li>Learn how to use the Bootstrap documentation to solve issues.</li>
-      <li>Understand what responsive web design is.</li>
-      <li>Understand the container.</li>
-      <li>Understand the grid system of CSS Frameworks.</li>
-      <li>Understand how to use glyphicons.</li>
-      <li>Be able to translate this knowledge to other CSS Frameworks including, but not limited to Skeleton, Materialize and Foundation.</li>
-    </ul>
+    <div class="container">
+      <p>By the end of this tutorial, you will know/be able to:</p>
+      <ul>
+        <li>Have a basic understanding of Bootstrap and its capabilities.</li>
+        <li>Learn how adding Bootstrap classes to an element can change its style.</li>
+        <li>Learn how to use the Bootstrap documentation to solve issues.</li>
+        <li>Understand what responsive web design is.</li>
+        <li>Understand the container.</li>
+        <li>Understand the grid system of CSS Frameworks.</li>
+        <li>Understand how to use glyphicons.</li>
+        <li>Be able to translate this knowledge to other CSS Frameworks including, but not limited to Skeleton, Materialize and Foundation.</li>
+      </ul>
+    </div>
 
     <h2>Review</h2>
 
-    <ul>
-      <li>HTML is a <em>markup language</em> used to describe content.</li>
-      <li>CSS can be used to style that content/change the way that it is displayed on a page.</li>
-      <li>JavaScript can be used to further enhance both the look and behavior of our websites.</li>
-    </ul>
+    <div class="container">
 
-    <p>At a high level, content itself is made up of words, images, videos, etc., but is not in and of itself very different from other documents that people produce. HTML, CSS, and JavaScript together help shape the way that our browsers display that content.</p>
+      <ul>
+        <li>HTML is a <em>markup language</em> used to describe content.</li>
+        <li>CSS can be used to style that content/change the way that it is displayed on a page.</li>
+        <li>JavaScript can be used to further enhance both the look and behavior of our websites.</li>
+      </ul>
+
+      <p>At a high level, content itself is made up of words, images, videos, etc., but is not in and of itself very different from other documents that people produce. HTML, CSS, and JavaScript together help shape the way that our <strong>browsers</strong> display that content.</p>
+    </div>
 
     <h2>Background</h2>
+    <div class="container">
 
-    <p>Bootstrap is a CSS/JavaScript framework. At its core it looks to provide developers with a starter kit for the CSS and JavaScript that they might want to use on their pages. Many developers have written code to produce a navbar with dropdowns; Bootstrap makes it so that you don't have to reinvent the wheel each time you want that same functionality.</p>
+      <p><strong>Bootstrap is a CSS/JavaScript framework.</strong> At its core it looks to provide developers with a starter kit for the CSS and JavaScript that they might want to use on their pages. <em>Many developers have written code to produce a navbar with dropdowns</em>; Bootstrap makes it so that you don't have to reinvent the wheel each time you want that same functionality.</p>
 
-    <p>Click <a href="css/main.css">this link</a> to get a sense of how much CSS was used to style this page. Not very much, right?</p>
+      <ul>
+        <li>Click <a href="css/main.css">this link</a> to get a sense of how much CSS was used to style this page. Not very much, right?</li>
+        <li>Click <a href="css/bootstrap.css">this link</a> to see how much CSS is included when you use Bootstrap in your project. A ton!</li>
+      </ul>
 
-    <p>Click <a href="css/bootstrap.css">this link</a> to see how much CSS is included when you use Bootstrap in your project. A ton!</p>
-
-    <p>Using Bootstrap is using styles that other people wrote so that you don't have to. It will continue to be important to have a fundamental understanding of how HTML/CSS/JavaScript work together to make a webpage work, but Bootstrap will allow you to create a decent looking page without too much initial setup.</p>
-
+      <p>Using Bootstrap is using styles that other people wrote so that you don't have to. It will continue to be important to have a fundamental understanding of how HTML/CSS/JavaScript work together to make a webpage work, but Bootstrap will allow you to create a decent looking page without too much initial setup.</p>
+    </div>
     <h2>Responsive Web Design</h2>
+    <div class="container">
 
-    <p>One of the advantages of Bootstrap is that its components are <em>responsive</em>. What exactly does that mean? Open some of the links below (each created with Bootstrap), and then drag the edge of your browser left and right to narrow and expand the viewport. You'll notice that the layout of these sites changes as the width of your viewport changes. Why would we want that? In a world of tablets and smartphones it can be advantageous to have a site that responds differently based on how wide the browser is. These sites detect that widt, and make som adjustments accordingly.</p>
+      <p>One of the advantages of Bootstrap is that its components are <em>responsive</em>. What exactly does that mean? Open some of the links below (each created with Bootstrap), and then drag the edge of your browser left and right to narrow and expand the viewport.</p>
 
-    <ul>
-      <li><a href="https://www.lyft.com/">Lyft</a></li>
-      <li><a href="http://www.vogue.com/">Vogue</a></li>
-      <li><a href="http://riot.design/en/">Riot</a></li>
-      <li><a href="http://www.newsweek.com/">Newsweek</a></li>
-    </ul>
+      <ul>
+        <li><a href="https://www.lyft.com/">Lyft</a></li>
+        <li><a href="http://www.vogue.com/">Vogue</a></li>
+        <li><a href="http://riot.design/en/">Riot</a></li>
+        <li><a href="http://www.newsweek.com/">Newsweek</a></li>
+      </ul>
 
-    <p>For additional Bootstrap examples, feel free to look at the sites below.</p>
-    <ul>
-      <li><a href="http://expo.getbootstrap.com/">Bootstrap Expo</a></li>
-      <li><a href="http://builtwithbootstrap.com/">Built with Bootstrap</a></li>
-    </ul>
+      <p>You'll notice that the layout of these sites changes as the width of your viewport changes. Something like this:</p>
 
-    <p>Compare that to the <a href="https://github.com/">GitHub home page</a>, or even your GitHub profile page. As you narrow the viewport things will start to shift, but fairly quickly they will simply be cut off. Sidenote: if you open GitHub on your phone it looks considerably better. It's possible that they've taken an <em>adaptive</em> approach to dealing with different screen sizes. If you're curious about the differences, take a look at <a href="https://www.uxpin.com/studio/blog/responsive-vs-adaptive-design-whats-best-choice-designers/">this article.</a></p>
+      <img src="images/responsive.gif" alt="Narrow that viewport!">
 
+      <p>Why would we want this behavior? In a world of tablets and smartphones it can be advantageous to have a site that responds differently based on the width of a user's browser. These sites detect that width, and make som adjustments accordingly.</p>
+
+      <p>For additional Bootstrap examples, feel free to look at the sites below.</p>
+      <ul>
+        <li><a href="http://expo.getbootstrap.com/">Bootstrap Expo</a></li>
+        <li><a href="http://builtwithbootstrap.com/">Built with Bootstrap</a></li>
+      </ul>
+
+      <p>Compare that to the <a href="https://github.com/">GitHub home page</a>, or even your GitHub profile page. As you narrow the viewport things will start to shift, but fairly quickly they will simply be cut off. <em>Sidenote:</em> if you open GitHub on your phone it looks considerably better. It's possible that they've taken an <em>adaptive</em> approach to dealing with different screen sizes. If you're curious about the differences, take a look at <a href="https://www.uxpin.com/studio/blog/responsive-vs-adaptive-design-whats-best-choice-designers/">this article.</a></p>
+    </div>
     <h2>Basic Three Column Layout</h2>
+    <div class="container">
 
-    <p>One of the goals of this tutorial is to begin to get you familiar with reading documentation for the tools that you use. Before you dig in, take a moment and look at the <a href="http://getbootstrap.com/">Bootstrap website</a>. In particular, look at the <em>Getting Started</em>, <em>CSS</em>, and <em>Components</em> sections of the site.</p>
+      <p>One of the goals of this tutorial is to begin to get you familiar with reading documentation for the tools that you use. Before you dig in, take a moment and look at the <a href="http://getbootstrap.com/">Bootstrap website</a>. In particular, look at the <em>Getting Started</em>, <em>CSS</em>, and <em>Components</em> sections of the site.</p>
 
-    <p>Once you've had a little bit of an opportunity to dig around, go back to the <a href="http://getbootstrap.com/getting-started/">Getting Started</a> page and download and unzip Bootstrap.</p>
+      <p>Once you've had a little bit of an opportunity to dig around, go back to the <a href="http://getbootstrap.com/getting-started/">Getting Started</a> page and download and unzip Bootstrap.</p>
 
-    <h3>Getting Set Up</h3>
+      <h3>Getting Set Up</h3>
 
-    <ul>
-      <li>In the directory that you forked for this tutorial, create a new <code>three_column</code> directory.</li>
-      <li>Find the <em>basic template</em> on the Getting Started page, and put it into a new index.html file in our project directory. Notice that in that file you have the following lines:
-        <ul>
-          <li>A link to <code>css/bootstrap.min.css</code></li>
-          <li>A script tag to a JavaScript library (jQuery) hosted by Google</li>
-          <li>A script tag pointing to a local copy of <code>bootstrap.min.js</code> in a <code>js</code> folder</li>
-        </ul>
-      </li>
-      <li>Open your <code>index.html</code> page in your browser, and you should have a pretty blandly styled "Hello World."</li>
-      <li>If you press <code>ctrl-opt-i</code> and look at the console (assuming you're using Chrome) you should see that the CSS and JavaScript files that are referenced in this page aren't yet loading.</li>
-      <li>In order for them to load, you'll need to move the <code>js</code>, <code>css</code>, and <code>fonts</code> folders that you downloaded from the Bootstrap site to the new <code>three_column</code> directory so that your new <code>index.html</code> file references them appropriately. Do that now.</li>
-      <li>Open your <code>index.html</code> file in the browser again to see what you have. Ideally, you'll still see "Hello World," but now it will be styled in a sans-serif font.</li>
-      <li>Celebrate!</li>
-    </ul>
+      <ul>
+        <li>In the directory that you forked for this tutorial, create a new <code>three_column</code> directory.</li>
+        <li>Find the <em>basic template</em> on the Getting Started page, and put it into a new index.html file in our project directory. Notice that in that file you have the following lines:
+          <ul>
+            <li>A link to <code>css/bootstrap.min.css</code></li>
+            <li>A script tag to a JavaScript library (jQuery) hosted by Google</li>
+            <li>A script tag pointing to a local copy of <code>bootstrap.min.js</code> in a <code>js</code> folder</li>
+          </ul>
+        </li>
+        <li>Open your <code>index.html</code> page in your browser, and you should have a pretty blandly styled "Hello World."</li>
+        <li>If you press <code>ctrl-opt-i</code> and look at the console (assuming you're using Chrome) you should see that the CSS and JavaScript files that are referenced in this page aren't yet loading.</li>
+        <li>In order for them to load, you'll need to move the <code>js</code>, <code>css</code>, and <code>fonts</code> folders that you downloaded from the Bootstrap site to the new <code>three_column</code> directory so that your new <code>index.html</code> file references them appropriately. Do that now.</li>
+        <li>Open your <code>index.html</code> file in the browser again to see what you have. Ideally, you'll still see "Hello World," but now it will be styled in a sans-serif font.</li>
+        <li>Celebrate!</li>
+      </ul>
 
-    <h3>Adding Content</h3>
+      <h3>Adding Content</h3>
 
-    <p>Sometimes you just need a little bit of content to see what your page will look like with words on it. When that happens, lots of people use <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">lorem ipsum</a>, or some other dummy text. If you're in a professional setting, <a href="http://www.lipsum.com/feed/html">the classic version</a> is usually a good choice, but if you're working on something for yourself or friends there are <a href="http://veggieipsum.com/">lots</a> <a href="http://seinfeldipsum.com/">of</a> <a href="https://baconipsum.com/">other</a> <a href="https://hipsum.co/">choices</a>.</p>
+      <p>Sometimes you just need a little bit of content to see what your page will look like with words on it. When that happens, lots of people use <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">lorem ipsum</a>, or some other dummy text. If you're in a professional setting, <a href="http://www.lipsum.com/feed/html">the classic version</a> is usually a good choice, but if you're working on something for yourself or friends there are <a href="http://veggieipsum.com/">lots</a> <a href="http://seinfeldipsum.com/">of</a> <a href="https://baconipsum.com/">other</a> <a href="https://hipsum.co/">choices</a>.</p>
 
-    <ul>
-      <li>Find three paragraphs of lorem ipsum and add it to the body of your <code>index.html</code> file.</li>
-      <li>Add titles above each of the paragraphs.</li>
-      <li>Wrap the paragraphs in <code>p</code> tags and the headers in <code>h2</code> tags.</li>
-      <li>Open the file in your browser again to see what you have now. There should be three paragraphs with heading stacked on top of each other.</li>
-    </ul>
+      <ul>
+        <li>Find three paragraphs of lorem ipsum and add it to the body of your <code>index.html</code> file.</li>
+        <li>Add titles above each of the paragraphs.</li>
+        <li>Wrap the paragraphs in <code>p</code> tags and the headers in <code>h2</code> tags.</li>
+        <li>Open the file in your browser again to see what you have now. There should be three paragraphs with heading stacked on top of each other.</li>
+      </ul>
 
-    <h3>Using Bootstrap</h3>
+      <h3>Using Bootstrap</h3>
 
-    <p>Now for the new stuff. We're going to use some of the styles that Bootstrap gives us to style those paragraphs so that instead of showing up on top of each other they line up side by side. One of the things you'll notice is that styling with Bootstrap often becomes and exercise in trying to figure out how some of the code snippets they offer you can be used on your content. To that end:</p>
+      <p>Now for the new stuff. We're going to use some of the styles that Bootstrap gives us to style those paragraphs so that instead of showing up on top of each other they line up side by side. One of the things you'll notice is that styling with Bootstrap often becomes an exercise in trying to figure out how some of the code snippets they offer you can be used on your content. To that end:</p>
 
-    <ul>
-      <li>Go back to the CSS section of the Bootstrap site to see what we can find on grids.</li>
-      <li>On that page, there should be an example called <code>Stacked-to-horizontal</code>. Copy the code from that example and put it into your <code>index.html</code> file below the paragraphs that you have already added.</li>
-      <li>If you open your page now, you should see some text like <code>.col-md-1</code> peppering the bottom of your screen. It might be hard to tell, but those snippets are arranged into a grid made up of twelve columns. Elements styled with a <code>.col-md-1</code> class have a width 1/12 the size of the total, while elements styled with a <code>.col-md-6</code> class have a width 1/2 the size of the total.</li>
-      <li>If you open the dev tools again (<code>cmd-opt-i</code> in Chrome) and click on the small box with an arrow in the top left corner of the console, you should be able to hover over different snippets of text to see the box that contains them.</li>
-      <li>As you do that, notice that the three column grid that we want is represented by the divs styled with a class of <code>.col-md-4</code>. Replace the <code>.col-md-4</code> snippets with our headers and paragraphs</li>
-      <li>If you open the page now, you should see that we're getting close. We just have the other text snippets still hanging out. Delete those rows from our <code>index.html</code> and we should have the three column view that we were looking to create.</li>
-      <li>If you'd like, at this point you can create an additional stylesheet in the <code>css</code> folder and add some custom styles to further change the look of these columns (e.g. add a <code>background-color</code>, or <code>border</code>). Be sure to include the link to the new stylesheet <em>underneath</em> the link to the Bootstrap stylesheet in the <code>head</code> of your document.</li>
-    </ul>
-
+      <ul>
+        <li>Go back to the CSS section of the Bootstrap site to see what we can find on grids.</li>
+        <li>On that page, there should be an example called <code>Stacked-to-horizontal</code>. Copy the code from that example and put it into your <code>index.html</code> file below the paragraphs that you have already added.</li>
+        <li>If you open your page now, you should see some text like <code>.col-md-1</code> peppering the bottom of your screen. It might be hard to tell, but those snippets are arranged into a grid made up of twelve columns. Elements styled with a <code>.col-md-1</code> class have a width 1/12 the size of the total, while elements styled with a <code>.col-md-6</code> class have a width 1/2 the size of the total.</li>
+        <li>If you open the dev tools again (<code>cmd-opt-i</code> in Chrome) and click on the small box with an arrow in the top left corner of the console (like this <img class="inline-image" src="images/arrow.png" alt="arrow">), you should be able to hover over different snippets of text to see the box that contains them.</li>
+        <li>As you do that, notice that the three column grid that we want is represented by the divs styled with a class of <code>.col-md-4</code>. Replace the <code>.col-md-4</code> snippets with our headers and paragraphs</li>
+        <li>If you open the page now, you should see that we're getting close. We just have the other text snippets still hanging out. Delete those rows from our <code>index.html</code> and we should have the three column view that we were looking to create.</li>
+        <li>If you'd like, at this point you can create an additional stylesheet in the <code>css</code> folder and add some custom styles to further change the look of these columns (e.g. add a <code>background-color</code>, or <code>border</code>). Be sure to include the link to the new stylesheet <em>underneath</em> the link to the Bootstrap stylesheet in the <code>head</code> of your document.</li>
+      </ul>
+    </div>
     <h2>Navbar</h2>
-    <p>Let's say we also want to add a navbar to the page that we're working on. We'll follow a similar process. Check to see if you can find the code you need on the <code>Components</code> section of the Bootstrap site. Once you've done that, copy it to your index file, and make adjustments until you have it looking the way you'd like. Be sure to check on your progress along the way. With Bootstrap, you might run into a situation where you've removed something without fully understanding what it does. To prevent this, be sure to check in frequently to see that you still have the functionality you expect as you make changes.</p>
+    <div class="container">
+      <p>Let's say we also want to add a navbar to the page that we're working on. We'll follow a similar process. Check to see if you can find the code you need on the <code>Components</code> section of the Bootstrap site. Once you've done that, copy it to your index file, and make adjustments until you have it looking the way you'd like. Be sure to check on your progress along the way. With Bootstrap, you might run into a situation where you've removed something without fully understanding what it does. To prevent this, be sure to check in frequently to see that you still have the functionality you expect as you make changes.</p>
 
-    <p>Spend some additional time on the Components page to get a sense for what Bootstrap has to offer.</p>
-
+      <p>Spend some additional time on the Components page to get a sense for what Bootstrap has to offer.</p>
+    </div>
     <h2>Workshop</h2>
+    <div class="container">
 
-    <ul>
-      <li>In the repo you cloned there's a taylor folder and a kanye folder</li>
-      <li>Each has a screenshot</li>
-      <li>See if you can recreate the screenshot using the files provided</li>
-      <li>Taylor has more substantial starting files (including an html file and Bootstrap files)</li>
-      <li>Kanye has just the content and images</li>
-      <li>Start with Taylor, then Kanye</li>
-      <li>Try to timebox this to no more than 2.5 to 3 hours. We don't expect that it will be pixel perfect, and will have some time to discuss in class.</li>
-      <li>Commit your changes, push to your GitHub repository, and then add a link to your repo to the appropriate submission form in the <code>ruby-submissions</code> repo.</li>
-    </ul>
-
+      <ul>
+        <li>In the repo you cloned there's a taylor folder and a kanye folder</li>
+        <li>Each has a screenshot</li>
+        <li>See if you can recreate the screenshot using the files provided</li>
+        <li>Taylor has more substantial starting files (including an html file and Bootstrap files)</li>
+        <li>Kanye has just the content and images</li>
+        <li>Start with Taylor, then Kanye</li>
+        <li>Try to timebox this to no more than 2.5 to 3 hours. We don't expect that it will be pixel perfect, and will have some time to discuss in class.</li>
+        <li>Commit your changes, push to your GitHub repository, and then add a link to your repo to the appropriate submission form in the <code>ruby-submissions</code> repo.</li>
+      </ul>
+    </div>
     <h2>Additional Resources</h2>
+    <div class="container">
 
-    <ul>
-      <li><a href="http://creativealive.com/wp-content/uploads/2014/01/bootstrap3-cheatsheet.pdf">Bootstrap Cheat Sheet</a></li>
-      <li><a href="https://gist.github.com/rwarbelow/da3ef21480b704305e68">Styling in Sinatra</a></li>
-    </ul>
-
+      <ul>
+        <li><a href="http://creativealive.com/wp-content/uploads/2014/01/bootstrap3-cheatsheet.pdf">Bootstrap Cheat Sheet</a></li>
+        <li><a href="https://gist.github.com/rwarbelow/da3ef21480b704305e68">Styling in Sinatra</a></li>
+      </ul>
+    </div>
     <h2>Other Opinions</h2>
-    <ul>
-      <li><a href="http://www.designyourway.net/blog/inspiration/the-case-against-using-bootstrap-to-design-websites/">The Case Against</a></li>
-      <li><a href="http://www.fastcodesign.com/3038367/9-gifs-that-explain-responsive-design-brilliantly">Responsive Design in Gifs</a></li>
-    </ul>
+    <div class="container">
+      <ul>
+        <li><a href="http://www.designyourway.net/blog/inspiration/the-case-against-using-bootstrap-to-design-websites/">The Case Against</a></li>
+        <li><a href="http://www.fastcodesign.com/3038367/9-gifs-that-explain-responsive-design-brilliantly">Responsive Design in Gifs</a></li>
+      </ul>
+    </div>
   </body>
 </html>
