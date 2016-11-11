@@ -93,9 +93,12 @@
           </ul>
         </li>
         <li>Open your <code>index.html</code> page in your browser, and you should have a pretty blandly styled "Hello World."</li>
+        <img src="images/hello.png" alt="Hello">
         <li>If you press <code>ctrl-opt-i</code> and look at the console (assuming you're using Chrome) you should see that the CSS and JavaScript files that are referenced in this page aren't yet loading.</li>
+        <img src="images/failed.png" alt="failed">
         <li>In order for them to load, you'll need to move the <code>js</code>, <code>css</code>, and <code>fonts</code> folders that you downloaded from the Bootstrap site to the new <code>three_column</code> directory so that your new <code>index.html</code> file references them appropriately. Do that now.</li>
         <li>Open your <code>index.html</code> file in the browser again to see what you have. Ideally, you'll still see "Hello World," but now it will be styled in a sans-serif font.</li>
+        <img src="images/hello-styled.png" alt="Hello styled">
         <li>Celebrate!</li>
       </ul>
 
@@ -108,6 +111,7 @@
         <li>Add titles above each of the paragraphs.</li>
         <li>Wrap the paragraphs in <code>p</code> tags and the headers in <code>h2</code> tags.</li>
         <li>Open the file in your browser again to see what you have now. There should be three paragraphs with heading stacked on top of each other.</li>
+        <img src="images/stacked.png" alt="Stacked paragraphs">
       </ul>
 
       <h3>Using Bootstrap</h3>
@@ -118,15 +122,21 @@
         <li>Go back to the CSS section of the Bootstrap site to see what we can find on grids.</li>
         <li>On that page, there should be an example called <code>Stacked-to-horizontal</code>. Copy the code from that example and put it into your <code>index.html</code> file below the paragraphs that you have already added.</li>
         <li>If you open your page now, you should see some text like <code>.col-md-1</code> peppering the bottom of your screen. It might be hard to tell, but those snippets are arranged into a grid made up of twelve columns. Elements styled with a <code>.col-md-1</code> class have a width 1/12 the size of the total, while elements styled with a <code>.col-md-6</code> class have a width 1/2 the size of the total.</li>
+        <img src="images/stacked-plus.png" alt="Stacked plus">
         <li>If you open the dev tools again (<code>cmd-opt-i</code> in Chrome) and click on the small box with an arrow in the top left corner of the console (like this <img class="inline-image" src="images/arrow.png" alt="arrow">), you should be able to hover over different snippets of text to see the box that contains them.</li>
         <li>As you do that, notice that the three column grid that we want is represented by the divs styled with a class of <code>.col-md-4</code>. Replace the <code>.col-md-4</code> snippets with our headers and paragraphs</li>
+        <img src="images/first-columns.png" alt="Columns with stuff still in them">
         <li>If you open the page now, you should see that we're getting close. We just have the other text snippets still hanging out. Delete those rows from our <code>index.html</code> and we should have the three column view that we were looking to create.</li>
+        <img src="images/columns.png" alt="Columns">
+        <li>The one big issue I see remaining is that our layout seems to be bumping right up against the edge of the page. Sometimes we want this behavior (look at the headings in this document for example), but in this case we most likely want to give the content some breathing room. In your <code>index.html</code> file, put a <code>div</code> tag before the Hello World <code>h1</code> and add a closing tag after the last <code>div</code> associated with your newly created columns. Give the first <code>div</code> a class of <code>container</code> (e.g. <code>&lt;div class="container"&gt;</code>). That should push your content to the center.</li>
+        <img src="images/columns-container.png" alt="Columns in a container">
         <li>If you'd like, at this point you can create an additional stylesheet in the <code>css</code> folder and add some custom styles to further change the look of these columns (e.g. add a <code>background-color</code>, or <code>border</code>). Be sure to include the link to the new stylesheet <em>underneath</em> the link to the Bootstrap stylesheet in the <code>head</code> of your document.</li>
       </ul>
     </div>
     <h2>Navbar</h2>
     <div class="container">
-      <p>Let's say we also want to add a navbar to the page that we're working on. We'll follow a similar process. Check to see if you can find the code you need on the <code>Components</code> section of the Bootstrap site. Once you've done that, copy it to your index file, and make adjustments until you have it looking the way you'd like. Be sure to check on your progress along the way. With Bootstrap, you might run into a situation where you've removed something without fully understanding what it does. To prevent this, be sure to check in frequently to see that you still have the functionality you expect as you make changes.</p>
+      <p>Let's say we also want to add a navbar to the page that we're working on. We'll follow a similar process. Check to see if you can find the code you need on the <code>Components</code> section of the Bootstrap site. Once you've done that, copy it to your index file, and make adjustments until you have it looking the way you'd like.</p>
+      <p>Be sure to check on your progress along the way. With Bootstrap, you might run into a situation where you've removed something without fully understanding what it does. To prevent this, be sure to check in frequently to see that you still have the functionality you expect as you make changes.</p>
 
       <p>Spend some additional time on the Components page to get a sense for what Bootstrap has to offer.</p>
     </div>
@@ -140,8 +150,8 @@
         <li>Taylor has more substantial starting files (including an html file and Bootstrap files)</li>
         <li>Kanye has just the content and images</li>
         <li>Start with Taylor, then Kanye</li>
-        <li>Try to timebox this to no more than 2.5 to 3 hours. We don't expect that it will be pixel perfect, and will have some time to discuss in class.</li>
-        <li>Commit your changes, push to your GitHub repository, and then add a link to your repo to the appropriate submission form in the <code>ruby-submissions</code> repo.</li>
+        <li>Try to timebox this to no more than 3 to 3.5 hours. We don't expect that it will be pixel perfect, and will have some time to discuss in class.</li>
+        <li>Commit your changes, push to your GitHub repository, and then submit a pull request by following the instructions in the <code>README.md</code> file in this repository.</li>
       </ul>
     </div>
     <h2>Additional Resources</h2>
